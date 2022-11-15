@@ -27,6 +27,5 @@ public class LotteryImpl implements Lottery {
         int number = ThreadLocalRandom.current().nextInt(MAXIMUM_NUMBER + 1);
         String color = colorSupplier.getRandomColor();
         return new Ball(color, number);
-
     }
 }
